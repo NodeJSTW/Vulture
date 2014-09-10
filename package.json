@@ -14,7 +14,9 @@
   ],
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "node_modules/mocha/bin/mocha -w",
+    "postinstall": "node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "async": "^0.9.0",
@@ -26,6 +28,18 @@
     "less-middleware": "1.0.x",
     "mongoose": "^3.8.16",
     "morgan": "~1.2.3",
+    "passport": "^0.2.1",
+    "passport-amazon": "^0.1.0",
+    "passport-baidu": "0.0.1",
+    "passport-bitbucket": "^0.1.2",
+    "passport-facebook": "^1.0.3",
+    "passport-github": "^0.1.5",
+    "passport-google": "^0.3.0",
+    "passport-linkedin-oauth2": "^1.1.1",
+    "passport-local": "^1.0.0",
+    "passport-qq": "0.0.3",
+    "passport-twitter": "^1.0.2",
+    "passport-weibo": "^0.1.2",
     "request": "^2.42.0",
     "serve-favicon": "~2.0.1",
     "socket.io": "^1.1.0"
@@ -33,8 +47,11 @@
   "devDependencies": {
     "bower": "^1.3.9",
     "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.4",
     "gulp-less": "^1.3.5",
-    "gulp-shell": "^0.2.9"
+    "gulp-shell": "^0.2.9",
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
   },
   "license": "MIT License",
   "engines": {
